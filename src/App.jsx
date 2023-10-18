@@ -46,10 +46,10 @@ function App() {
             {board[index]}
           </Square>
         )}
-        <section className='turn'>
-          <Square isSelected={turn === TURNS.O}>{TURNS.O}</Square>
-          <Square isSelected={turn === TURNS.X}>{TURNS.X}</Square>
-        </section>
+      </section>
+      <section className='turn'>
+        <Square isSelected={turn === TURNS.O}>{TURNS.O}</Square>
+        <Square isSelected={turn === TURNS.X}>{TURNS.X}</Square>
       </section>
       {
         winner !== null &&
